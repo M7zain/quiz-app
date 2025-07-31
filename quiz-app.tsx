@@ -152,7 +152,7 @@ const translations = {
 
 export default function Component() {
   const [showStartMenu, setShowStartMenu] = useState(true)
-  const [language, setLanguage] = useState<Language>("en")
+  const [language, setLanguage] = useState<Language>("ar")
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [score, setScore] = useState(0)
@@ -258,7 +258,7 @@ export default function Component() {
                 />
               </div>
               <CardTitle className="text-4xl font-bold text-gray-800 mb-4">
-                {language === "en" ? "Legal Knowledge Quiz" : "اختبار المعرفة القانونية"}
+                {language === "en" ? "Legal Knowledge Quiz" : "نظام القمة تسأل  "}
               </CardTitle>
               <p className="text-lg text-gray-600">
                 {language === "en"
