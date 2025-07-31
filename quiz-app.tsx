@@ -374,7 +374,7 @@ export default function Component() {
                           : "border-gray-200 bg-gray-50 text-gray-400"
                   }`}
                 >
-                  <div className={`flex items-center justify-between ${isRTL ? "flex-row-reverse" : ""}`}>
+                  <div className={`flex items-center justify-between `}>
                     <span>{option}</span>
                     {showResult && selectedAnswer === index && (
                       <div className="animate-pulse">
