@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -18,9 +16,9 @@ export default function RootLayout({
       <head>
         <style>{`
 html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
+  font-family: "Tajawal", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-sans: "Tajawal", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-mono: "Tajawal", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
         `}</style>
       </head>
