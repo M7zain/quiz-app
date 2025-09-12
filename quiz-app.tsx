@@ -12,54 +12,104 @@ const translations = {
   en: {
     questions: [
       {
-        question: "What is the burden of proof required in criminal cases?",
-        options: [
-          "Preponderance of evidence",
-          "Clear and convincing evidence",
-          "Beyond a reasonable doubt",
-          "Substantial evidence",
-        ],
+        question: "When was the law regulating the legal profession in Kuwait issued?",
+        options: ["1960", "1962", "1970", "1985"],
+        correct: 1,
+      },
+      {
+        question: "Which authority is responsible for registering lawyers in Kuwait?",
+        options: ["Ministry of Justice", "Ministry of Interior", "National Assembly", "Constitutional Court"],
+        correct: 0,
+      },
+      {
+        question: "To be registered as a practicing lawyer in Kuwait, one must:",
+        options: ["Be a Kuwaiti citizen", "Be a non-Kuwaiti resident", "Be a government employee", "Work in a private company"],
+        correct: 0,
+      },
+      {
+        question: "What is the required academic qualification for a lawyer in Kuwait?",
+        options: ["High school diploma", "College diploma", "Bachelor of Law", "Master’s degree"],
         correct: 2,
       },
       {
-        question: "Which principle establishes that evidence obtained illegally cannot be used in court?",
-        options: ["Miranda Rule", "Exclusionary Rule", "Hearsay Rule", "Best Evidence Rule"],
-        correct: 1,
-      },
-      {
-        question: "In contract law, what makes an agreement legally binding?",
-        options: ["Written documentation", "Consideration and mutual assent", "Notarization", "Witness signatures"],
-        correct: 1,
-      },
-      {
-        question: "What is the statute of limitations for most felonies?",
-        options: ["1 year", "3 years", "5 years", "Varies by jurisdiction"],
+        question: "Who is entitled to hire a lawyer in Kuwait?",
+        options: ["Individuals", "Companies", "Government ministries", "All of the above"],
         correct: 3,
       },
       {
-        question: "Which constitutional amendment protects against self-incrimination?",
-        options: ["Fourth Amendment", "Fifth Amendment", "Sixth Amendment", "Eighth Amendment"],
+        question: "A lawyer appearing before the Constitutional Court in Kuwait must be:",
+        options: ["A fresh graduate", "Registered before the Court of Cassation", "A government employee", "A trainee"],
         correct: 1,
       },
       {
-        question: "What is required for a valid search warrant?",
-        options: ["Police suspicion", "Reasonable doubt", "Probable cause", "Beyond reasonable doubt"],
+        question: "What is the training period required before registration as a practicing lawyer?",
+        options: ["6 months", "1 year", "2 years", "3 years"],
         correct: 2,
       },
       {
-        question: "In tort law, what are the three elements of negligence?",
-        options: [
-          "Intent, action, harm",
-          "Duty, breach, causation",
-          "Duty, breach, damages",
-          "Action, causation, intent",
-        ],
+        question: "Who is prohibited from combining their job with practicing law?",
+        options: ["University professor", "Government employee", "Cooperative society member", "Private consultant"],
+        correct: 1,
+      },
+      {
+        question: "In Kuwait, the Public Prosecution is considered part of:",
+        options: ["Executive authority", "Judicial authority", "Legislative authority", "Ministerial committee"],
+        correct: 1,
+      },
+      {
+        question: "Which court in Kuwait has jurisdiction over administrative disputes?",
+        options: ["Criminal Court", "Commercial Court", "Court of First Instance – Administrative Circuit", "Sharia Court"],
         correct: 2,
       },
       {
-        question: "What is the difference between murder and manslaughter?",
-        options: ["Premeditation and intent", "Weapon used", "Location of crime", "Age of victim"],
+        question: "Which of the following is a principle of the legal profession in Kuwait?",
+        options: ["Independence of lawyers", "Complete subordination to the client", "No ethical obligations", "Absolute freedom without limits"],
         correct: 0,
+      },
+      {
+        question: "Which of the following is a disciplinary penalty for lawyers in Kuwait?",
+        options: ["Warning", "Imprisonment", "Deportation", "Fine only"],
+        correct: 0,
+      },
+      {
+        question: "Which body is responsible for disciplinary accountability of lawyers in Kuwait?",
+        options: ["Registration Committee", "Disciplinary Committee", "National Assembly", "Supreme Court"],
+        correct: 1,
+      },
+      {
+        question: "Which of the following is a court of fact and appeal in Kuwait?",
+        options: ["Court of Cassation", "Court of Appeal", "Constitutional Court", "Court of First Instance"],
+        correct: 1,
+      },
+      {
+        question: "The Constitutional Court in Kuwait has jurisdiction over:",
+        options: ["Misdemeanor cases", "Electoral appeals", "Civil disputes", "Commercial disputes"],
+        correct: 1,
+      },
+      {
+        question: "The legal profession in Kuwait is described as:",
+        options: ["A commercial activity", "A professional mission", "A government job", "An unregulated social service"],
+        correct: 1,
+      },
+      {
+        question: "Which right is granted to lawyers while performing their duties?",
+        options: ["Immunity for defense statements", "Absolute freedom without law", "Exemption from all taxes", "Complete immunity from accountability"],
+        correct: 0,
+      },
+      {
+        question: "A lawyer can be removed from the register of practicing lawyers if:",
+        options: ["They voluntarily leave the profession", "They suffer from a minor illness", "They take a side job", "The client requests it"],
+        correct: 0,
+      },
+      {
+        question: "Can non-lawyers plead before Kuwaiti courts?",
+        options: ["Yes, in all cases", "Yes, in minor cases only", "No, unless pleading on their own behalf", "Yes, with a temporary permit"],
+        correct: 2,
+      },
+      {
+        question: "What is the minimum age for registration as a lawyer in Kuwait?",
+        options: ["18 years", "21 years", "23 years", "25 years"],
+        correct: 1,
       },
     ],
     ui: {
@@ -84,49 +134,104 @@ const translations = {
   ar: {
     questions: [
       {
-        question: "ما هو عبء الإثبات المطلوب في القضايا الجنائية؟",
-        options: ["رجحان الأدلة", "أدلة واضحة ومقنعة", "ما وراء الشك المعقول", "أدلة جوهرية"],
+        question: "متى صدر قانون تنظيم مهنة المحاماة في الكويت؟",
+        options: ["1960", "1962", "1970", "1985"],
+        correct: 1,
+      },
+      {
+        question: "من هي الجهة المسؤولة عن قيد المحامين في الكويت؟",
+        options: ["وزارة العدل", "وزارة الداخلية", "مجلس الأمة", "المحكمة الدستورية"],
+        correct: 0,
+      },
+      {
+        question: "يشترط لقيد المحامي بجدول المحامين المشتغلين أن يكون:",
+        options: ["كويتي الجنسية", "غير كويتي لكن مقيم", "موظف حكومي", "موظف في شركة خاصة"],
+        correct: 0,
+      },
+      {
+        question: "ما هو شرط المؤهل العلمي للمحامي في الكويت؟",
+        options: ["شهادة ثانوية", "شهادة دبلوم", "شهادة بكالوريوس في الحقوق", "شهادة ماجستير"],
         correct: 2,
       },
       {
-        question: "أي مبدأ ينص على أن الأدلة المحصلة بطريقة غير قانونية لا يمكن استخدامها في المحكمة؟",
-        options: ["قاعدة ميراندا", "قاعدة الاستبعاد", "قاعدة الإشاعة", "قاعدة أفضل دليل"],
-        correct: 1,
-      },
-      {
-        question: "في قانون العقود، ما الذي يجعل الاتفاقية ملزمة قانونياً؟",
-        options: ["التوثيق المكتوب", "المقابل والموافقة المتبادلة", "التوثيق", "توقيعات الشهود"],
-        correct: 1,
-      },
-      {
-        question: "ما هي مدة التقادم لمعظم الجنايات؟",
-        options: ["سنة واحدة", "3 سنوات", "5 سنوات", "تختلف حسب الولاية القضائية"],
+        question: "من الجهات التي يحق لها الاستعانة بمحامٍ:",
+        options: ["الأفراد", "الشركات", "الوزارات", "جميع ما سبق"],
         correct: 3,
       },
       {
-        question: "أي تعديل دستوري يحمي من الإدانة الذاتية؟",
-        options: ["التعديل الرابع", "التعديل الخامس", "التعديل السادس", "التعديل الثامن"],
+        question: "المحامي أمام المحكمة الدستورية في الكويت يجب أن يكون:",
+        options: ["حديث التخرج", "مقيدًا بجدول المحامين المقبولين أمام التمييز", "موظفًا حكوميًا", "متدربًا"],
         correct: 1,
       },
       {
-        question: "ما المطلوب لإذن تفتيش صالح؟",
-        options: ["شك الشرطة", "شك معقول", "سبب محتمل", "ما وراء الشك المعقول"],
+        question: "مدة التدريب قبل القيد في جدول المحامين المشتغلين هي:",
+        options: ["6 أشهر", "سنة واحدة", "سنتان", "ثلاث سنوات"],
         correct: 2,
       },
       {
-        question: "في قانون الضرر، ما هي العناصر الثلاثة للإهمال؟",
-        options: [
-          "القصد، الفعل، الضرر",
-          "الواجب، الإخلال، السببية",
-          "الواجب، الإخلال، الأضرار",
-          "الفعل، السببية، القصد",
-        ],
+        question: "من لا يجوز له الجمع بين المحاماة وبين وظيفته:",
+        options: ["أستاذ الجامعة", "موظف الدولة", "عضو الجمعية التعاونية", "مستشار خاص"],
+        correct: 1,
+      },
+      {
+        question: "يقصد بالنيابة العامة في الكويت أنها:",
+        options: ["سلطة تنفيذية", "سلطة قضائية", "سلطة تشريعية", "لجنة وزارية"],
+        correct: 1,
+      },
+      {
+        question: "المحكمة المختصة بنظر المنازعات الإدارية في الكويت هي:",
+        options: ["المحكمة الجزائية", "المحكمة التجارية", "المحكمة الكلية – الدائرة الإدارية", "المحكمة الشرعية"],
         correct: 2,
       },
       {
-        question: "ما الفرق بين القتل العمد والقتل غير العمد؟",
-        options: ["سبق الإصرار والقصد", "السلاح المستخدم", "مكان الجريمة", "عمر الضحية"],
+        question: "أحد مبادئ المحاماة في الكويت:",
+        options: ["استقلالية المحامي", "تبعية المحامي للموكل دائمًا", "عدم خضوع المحامي لأخلاقيات", "حرية مطلقة بلا قيود"],
         correct: 0,
+      },
+      {
+        question: "من العقوبات التأديبية للمحامي:",
+        options: ["الإنذار", "السجن", "الطرد من الدولة", "الغرامة فقط"],
+        correct: 0,
+      },
+      {
+        question: "الهيئة المسؤولة عن مساءلة المحامي تأديبيًا هي:",
+        options: ["لجنة القيد", "لجنة التأديب", "مجلس الأمة", "المحكمة العليا"],
+        correct: 1,
+      },
+      {
+        question: "أي من المحاكم التالية تعتبر محكمة موضوع واستئناف في الكويت؟",
+        options: ["محكمة التمييز", "محكمة الاستئناف", "المحكمة الدستورية", "المحكمة الكلية"],
+        correct: 1,
+      },
+      {
+        question: "المحكمة الدستورية في الكويت تختص بـ:",
+        options: ["قضايا الجنح", "الطعون الانتخابية", "المنازعات المدنية", "القضايا التجارية"],
+        correct: 1,
+      },
+      {
+        question: "مهنة المحاماة في الكويت توصف بأنها:",
+        options: ["عمل تجاري", "رسالة مهنية", "وظيفة حكومية", "خدمة اجتماعية بلا تنظيم"],
+        correct: 1,
+      },
+      {
+        question: "من الحقوق التي يتمتع بها المحامي أثناء عمله:",
+        options: ["الحصانة في ما يبدِيه من دفاع", "حرية مطلقة دون قانون", "الإعفاء من جميع الضرائب", "عدم محاسبته نهائيًا"],
+        correct: 0,
+      },
+      {
+        question: "يمكن شطب المحامي من جدول المشتغلين إذا:",
+        options: ["ترك المهنة بإرادته", "مرض بسيط", "انتقل لعمل إضافي", "طلب من الموكل"],
+        correct: 0,
+      },
+      {
+        question: "هل يجوز لغير المحامي الترافع أمام المحاكم في الكويت؟",
+        options: ["نعم، في جميع الدعاوى", "نعم، في القضايا الصغيرة فقط", "لا، إلا إذا ترافع عن نفسه", "نعم، إذا حصل على تصريح مؤقت"],
+        correct: 2,
+      },
+      {
+        question: "ما هو السن الأدنى للقيد بجدول المحامين في الكويت؟",
+        options: ["18 سنة", "21 سنة", "23 سنة", "25 سنة"],
+        correct: 1,
       },
     ],
     ui: {
