@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'القمة الفانونية',
-  description: 'created by zain',
+  description: 'created by Zoudne',
 }
 
 export default function RootLayout({
