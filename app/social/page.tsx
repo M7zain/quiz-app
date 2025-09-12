@@ -4,10 +4,8 @@ import { Button } from '@/components/ui/button'
 
 export default function SocialPage() {
   const links = [
-    { href: 'https://wa.me/966000000000', label: 'واتساب' },
-    { href: 'https://t.me/username', label: 'تيليجرام' },
-    { href: 'https://x.com/username', label: 'تويتر X' },
-    { href: 'https://instagram.com/username', label: 'انستغرام' },
+    { href: 'https://wa.me/96597444051', label: 'واتساب' },
+    { href: 'https://instagram.com/alqemahlaw/', label: 'انستغرام' },
   ]
 
   return (

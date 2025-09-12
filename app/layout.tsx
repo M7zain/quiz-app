@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { SiteHeader } from '@/components/site-header'
 import { BottomNav } from '@/components/bottom-nav'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'القمة الفانونية',
@@ -27,6 +28,7 @@ html {
       <body className="font-arabic pb-16">
         <SiteHeader />
         <main>{children}</main>
+        <Footer />
         <BottomNav />
       </body>
     </html>

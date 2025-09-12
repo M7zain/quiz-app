@@ -11,10 +11,10 @@ export function BottomNav() {
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto grid max-w-7xl grid-cols-2">
-        <TabLink href="/" active={pathname === "/"} label="الرئيسية / الاختبار">
+        <TabLink href="/" active={pathname === "/"}>
           <HomeIcon className="size-5" />
         </TabLink>
-        <TabLink href="/social" active={pathname?.startsWith("/social") ?? false} label="روابط التواصل">
+        <TabLink href="/social" active={pathname?.startsWith("/social") ?? false} >
           <LinkIcon className="size-5" />
         </TabLink>
       </div>
@@ -30,7 +30,7 @@ function TabLink({
 }: {
   href: string
   active?: boolean
-  label: string
+  label?: string
   children: React.ReactNode
 }) {
   return (

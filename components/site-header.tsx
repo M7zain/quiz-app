@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button"
 
 export function SiteHeader() {
   return (
-    <header className="border-b">
+    <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <span className="font-medium">المحامي مرزوق  العاصي </span>
               <Button variant="ghost" size="icon" className="rounded-full p-0">
