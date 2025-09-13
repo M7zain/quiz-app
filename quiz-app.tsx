@@ -374,13 +374,13 @@ export default function Component() {
                 <img
                   src="tablet.png?height=120&width=120&text=⚖️+Law+Quiz"
                   alt="Legal Quiz Logo"
-                  className="w-80 h-70"
+                  className=" h-70"
                 />
               </div>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-4">
 
-              <Button onClick={startQuiz} size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-3 sm:py-4 bg-gray-700 hover:bg-gray-800">
+              <Button onClick={startQuiz} size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-2 sm:py-4 bg-gray-700 hover:bg-gray-800">
                 {language === "en" ? "Start Legal Quiz" : "ابدأ الاختبار القانوني"}
               </Button>
             </CardContent>

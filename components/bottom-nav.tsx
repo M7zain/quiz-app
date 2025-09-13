@@ -15,7 +15,9 @@ export function BottomNav() {
           <HomeIcon className="size-5" />
         </TabLink>
         <TabLink href="/social" active={pathname?.startsWith("/social") ?? false} >
-          <LinkIcon className="size-5" />
+          <span className="bg-black text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-gray-800 transition-colors">
+            اطلب استشارتك الآن
+          </span>
         </TabLink>
       </div>
     </nav>
