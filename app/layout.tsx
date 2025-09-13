@@ -5,7 +5,7 @@ import { BottomNav } from '@/components/bottom-nav'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: 'القمة الفانونية',
+  title: 'القمة القانونية',
   description: 'created by Zoudne',
 }
 
