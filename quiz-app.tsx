@@ -324,7 +324,7 @@ export default function Component() {
         }
       `}</style>
       <div
-        className={`h-screen w-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center p-4 ${isRTL ? "rtl" : "ltr"} overflow-hidden font-arabic fixed inset-0`}
+        className={`h-screen w-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center p-2 sm:p-4 ${isRTL ? "rtl" : "ltr"} overflow-hidden font-arabic fixed inset-0`}
         dir={isRTL ? "rtl" : "ltr"}
         style={{ touchAction: 'none', userSelect: 'none' }}
       >
@@ -350,7 +350,7 @@ export default function Component() {
 
       {/* Start Menu */}
       {showStartMenu && (
-        <div className="relative w-full max-w-2xl">
+        <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
           <Button
             onClick={toggleLanguage}
             variant="outline"
@@ -360,12 +360,12 @@ export default function Component() {
             {language === "en" ? t.ui.switchToArabic : t.ui.switchToEnglish}
           </Button>
 
-          <Card className="w-full mt-12 text-center">
+          <Card className="w-full mt-4 sm:mt-8 md:mt-12 text-center">
             <CardHeader className="pb-4">
-            <CardTitle className="text-4xl font-bold text-gray-800 ">
+            <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 ">
                 {language === "en" ? "Legal Knowledge Quiz" : " القمة تسأل ... "}
               </CardTitle>
-              <p className="text-lg text-gray-600">
+              <p className="text-sm sm:text-base md:text-lg text-gray-600">
                 {language === "en"
                   ? "because ignorance of the law is no excuse!"
                   : "لأن الجهل بالقانون ليس عذرا!"}
@@ -380,7 +380,7 @@ export default function Component() {
             </CardHeader>
             <CardContent className="space-y-6">
 
-              <Button onClick={startQuiz} size="lg" className="text-xl px-12 py-4 bg-gray-700 hover:bg-gray-800">
+              <Button onClick={startQuiz} size="lg" className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-3 sm:py-4 bg-gray-700 hover:bg-gray-800">
                 {language === "en" ? "Start Legal Quiz" : "ابدأ الاختبار القانوني"}
               </Button>
             </CardContent>
@@ -390,7 +390,7 @@ export default function Component() {
 
       {/* Quiz Complete Screen */}
       {!showStartMenu && quizComplete && (
-        <div className="relative w-full max-w-2xl">
+        <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
           <Button
             onClick={toggleLanguage}
             variant="outline"
@@ -433,7 +433,7 @@ export default function Component() {
 
       {/* Quiz Questions */}
       {!showStartMenu && !quizComplete && (
-        <div className="relative w-full max-w-2xl">
+        <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
           <Button
             onClick={toggleLanguage}
             variant="outline"
@@ -462,7 +462,7 @@ export default function Component() {
                 </div>
               </div>
               <Progress value={progress} className="mb-4" />
-              <CardTitle className="text-2xl font-bold text-center">
+              <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-center">
                 {t.questions[currentQuestion].question}
               </CardTitle>
             </CardHeader>
@@ -472,7 +472,7 @@ export default function Component() {
                   key={index}
                   onClick={() => handleAnswerSelect(index)}
                   disabled={selectedAnswer !== null}
-                  className={`w-full p-4 rounded-lg border-2 transition-all duration-300 font-medium ${
+                  className={`w-full p-2 sm:p-3 md:p-4 rounded-lg border-2 transition-all duration-300 font-medium text-sm sm:text-base ${
                     isRTL ? "text-right" : "text-left"
                   } ${
                     selectedAnswer === null
@@ -513,7 +513,7 @@ export default function Component() {
                   >
                     {selectedAnswer === t.questions[currentQuestion].correct ? t.ui.correct : t.ui.incorrect}
                   </div>
-                  <Button onClick={nextQuestion} className="text-lg px-8 py-3">
+                  <Button onClick={nextQuestion} className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3">
                     {currentQuestion < t.questions.length - 1 ? t.ui.nextQuestion : t.ui.viewResults}
                   </Button>
                 </div>

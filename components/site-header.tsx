@@ -28,7 +28,7 @@ export function SiteHeader() {
           />
         </Link>
         <div className="flex items-center gap-3">
-          <span className="font-medium text-sm">الدكتور المحامي مرزوق العاصي</span>
+          <span className="font-medium text-[12px] text-align-right">الدكتور المحامي مرزوق العاصي</span>
           <Button variant="ghost" size="icon" className="rounded-full p-0">
             <Avatar className="size-9">
               <AvatarImage src="/user.png" alt="User" />
