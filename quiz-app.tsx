@@ -354,7 +354,7 @@ export default function Component() {
           <Button
             onClick={toggleLanguage}
             variant="outline"
-            className={`absolute top-0 ${isRTL ? "left-0" : "right-0"} mb-4 z-10`}
+            className={` top-0 ${isRTL ? "left-0" : "right-0"} mb-8 z-10`}
           >
             <Languages className={`h-4 w-4 ${isRTL ? "ml-2" : "mr-2"}`} />
             {language === "en" ? t.ui.switchToArabic : t.ui.switchToEnglish}

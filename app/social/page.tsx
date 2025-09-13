@@ -15,7 +15,6 @@ export default function SocialPage() {
         <h1 className="text-xl font-bold">الدكتور المحامي مرزوق العاصي </h1>
         <p className="text-muted-foreground text-sm">روابط التواصل الاجتماعي</p>
       </div>
-
       <div className="flex flex-col gap-3">
         {links.map((l) => (
           <Button key={l.href} asChild variant="outline" className="w-full py-6 text-base">
