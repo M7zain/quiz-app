@@ -417,7 +417,7 @@ export default function Component() {
                       ? t.ui.goodWork
                       : t.ui.keepPracticing}
               </div>
-              <div className="flex gap-4 justify-center">
+              <div className="flex flex-col gap-4 justify-center">
                 <Button onClick={resetQuiz} className="text-lg px-8 py-3">
                   <RotateCcw className={`h-5 w-5 ${isRTL ? "ml-2" : "mr-2"}`} />
                   {t.ui.tryAgain}
