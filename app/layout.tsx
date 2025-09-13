@@ -27,7 +27,7 @@ html {
       </head>
       <body className="font-arabic pb-16">
         <SiteHeader />
-        <main>{children}</main>
+        <main className="relative">{children}</main>
         <Footer />
         <BottomNav />
       </body>

@@ -317,10 +317,17 @@ export default function Component() {
   }
 
   return (
-    <div
-      className={`min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center p-4 ${isRTL ? "rtl" : "ltr"} relative overflow-hidden font-arabic`}
-      dir={isRTL ? "rtl" : "ltr"}
-    >
+    <>
+      <style jsx global>{`
+        footer {
+          display: none !important;
+        }
+      `}</style>
+      <div
+        className={`h-screen w-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center p-4 ${isRTL ? "rtl" : "ltr"} overflow-hidden font-arabic fixed inset-0`}
+        dir={isRTL ? "rtl" : "ltr"}
+        style={{ touchAction: 'none', userSelect: 'none' }}
+      >
       {/* Improved Background Flash Effects */}
       {animationState === "correct" && (
         <div
@@ -355,21 +362,21 @@ export default function Component() {
 
           <Card className="w-full mt-12 text-center">
             <CardHeader className="pb-4">
-              <div className="flex justify-center mb-6">
-                <img
-                  src="logo.png?height=120&width=120&text=⚖️+Law+Quiz"
-                  alt="Legal Quiz Logo"
-                  className="w-70 h-70 shadow-lg p-3"
-                />
-              </div>
-              <CardTitle className="text-4xl font-bold text-gray-800 mb-4">
-                {language === "en" ? "Legal Knowledge Quiz" : "نظام القمة تسأل  "}
+            <CardTitle className="text-4xl font-bold text-gray-800 ">
+                {language === "en" ? "Legal Knowledge Quiz" : " القمة تسأل ... "}
               </CardTitle>
               <p className="text-lg text-gray-600">
                 {language === "en"
-                  ? "Test your legal expertise with challenging questions!"
-                  : "اختبر خبرتك القانونية بأسئلة تحدي!"}
+                  ? "because ignorance of the law is no excuse!"
+                  : "لأن الجهل بالقانون ليس عذرا!"}
               </p>
+              <div className="flex justify-center ">
+                <img
+                  src="tablet.png?height=120&width=120&text=⚖️+Law+Quiz"
+                  alt="Legal Quiz Logo"
+                  className="w-80 h-70"
+                />
+              </div>
             </CardHeader>
             <CardContent className="space-y-6">
 
@@ -535,6 +542,7 @@ export default function Component() {
           ))}
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }

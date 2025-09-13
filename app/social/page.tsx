@@ -12,7 +12,7 @@ export default function SocialPage() {
     <div className="mx-auto max-w-md px-4 py-8 text-center">
       <div className="mb-6 flex flex-col items-center gap-3">
         <Image src="/user.png" alt="المحامي مرزوق العاصي" width={80} height={80} className="rounded-full" />
-        <h1 className="text-xl font-bold">المحامي مرزوق العاصي</h1>
+        <h1 className="text-xl font-bold">الدكتور المحامي مرزوق العاصي </h1>
         <p className="text-muted-foreground text-sm">روابط التواصل الاجتماعي</p>
       </div>
 
